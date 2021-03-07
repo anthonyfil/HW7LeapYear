@@ -55,7 +55,18 @@ class test_LeapYear(unittest.TestCase):
                 result = LeapYear.LeapYear(1100)
                 self.assertEqual(result, False)
                  
-
+        def test_LeapYearDiv100(self):
+                #Testing Leap years that are divisible by 400
+                result = LeapYear.LeapYear(400)
+                self.assertEqual(result, True)
+                
+                
+                result = LeapYear.LeapYear(800)
+                self.assertEqual(result, True)
+                
+                
+                result = LeapYear.LeapYear(1600)
+                self.assertEqual(result, True)
 
 
                 
