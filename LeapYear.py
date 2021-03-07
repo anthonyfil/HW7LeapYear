@@ -1,5 +1,7 @@
 def LeapYear(x):
     if(x/4.0 == round(x/4.0)):
-        return True;
-    return False;
+        if(x/100.0 == round(x/100.0)):
+            return False
+        return True
+    return False
     
