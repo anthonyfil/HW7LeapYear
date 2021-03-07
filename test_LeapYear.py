@@ -21,7 +21,28 @@ class test_LeapYear(unittest.TestCase):
 
                 result = LeapYear.LeapYear(279)
                 self.assertEqual(result, False)
-        
+        def test_LeapYearDiv4(self):
+                #Testing Leap years that are divisible by 4
+                result = LeapYear.LeapYear(4)
+                self.assertEqual(result, True)
+                
+                
+                result = LeapYear.LeapYear(8)
+                self.assertEqual(result, True)
+                
+                
+                result = LeapYear.LeapYear(12)
+                self.assertEqual(result, True)
+                result = LeapYear.LeapYear(40)
+                self.assertEqual(result, True)
+                
+                result = LeapYear.LeapYear(180)
+                self.assertEqual(result, True)
+
+                result = LeapYear.LeapYear(1004)
+                self.assertEqual(result, True)       
+
+
                 
 if __name__ == "__main__":
         unittest.main()
